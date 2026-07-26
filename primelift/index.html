@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRimeLift – Krafttraining planen und protokollieren</title>
+    <meta name="description" content="PRimeLift ist eine iOS- und Apple-Watch-App für Krafttraining: Pläne, Pausen-Timer, PR-Erkennung, Statistik. Deine Daten bleiben bei dir.">
+    <style>
+        :root {
+            --canvas: #0b1310;
+            --surface: #111b16;
+            --accent: #6ee7b7;
+            --gold: #f5b642;
+            --text: #e8f0ea;
+            --muted: #7d9187;
+            --border: rgba(255,255,255,.08);
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.65;
+            color: var(--text);
+            background: var(--canvas);
+            margin: 0;
+            padding: 0 20px 60px;
+        }
+        .wrap { max-width: 760px; margin: 0 auto; }
+        header { padding: 60px 0 30px; }
+        .brand {
+            font-size: 2.6rem; font-weight: 800; letter-spacing: -.02em; margin: 0;
+        }
+        .brand span { color: var(--accent); }
+        .tagline { color: var(--muted); font-size: 1.15rem; margin: 10px 0 0; }
+        .platforms {
+            display: inline-block; margin-top: 18px; padding: 6px 14px;
+            border: 1px solid var(--border); border-radius: 999px;
+            color: var(--muted); font-size: .85rem;
+        }
+        h2 {
+            margin: 46px 0 14px; font-size: 1.25rem;
+            border-bottom: 1px solid var(--border); padding-bottom: 8px;
+        }
+        .cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+        .card {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 14px; padding: 18px;
+        }
+        .card h3 { margin: 0 0 6px; font-size: 1rem; }
+        .card p { margin: 0; color: var(--muted); font-size: .92rem; }
+        .privacy {
+            background: rgba(110,231,183,.08);
+            border: 1px solid rgba(110,231,183,.3);
+            border-radius: 14px; padding: 20px; margin: 24px 0;
+        }
+        .privacy strong { color: var(--accent); }
+        ul { color: var(--muted); padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        a { color: var(--accent); }
+        .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+        .links a {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 10px; padding: 10px 16px; text-decoration: none;
+            font-size: .92rem;
+        }
+        footer {
+            margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border);
+            color: var(--muted); font-size: .85rem;
+        }
+        .lang { color: var(--muted); font-size: .85rem; margin-top: 40px; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+    <header>
+        <h1 class="brand">PR<span>ime</span>Lift</h1>
+        <p class="tagline">Krafttraining planen, protokollieren und im Blick behalten – auf iPhone und Apple&nbsp;Watch.</p>
+        <div class="platforms">iOS 26.5 · watchOS 26.5 · Deutsch &amp; English</div>
+    </header>
+
+    <h2>Was die App macht</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Pläne</h3>
+            <p>Eigene Trainingspläne aus einem kuratierten Katalog von 127 Kernübungen – oder aus 1.324 insgesamt. Eigene Übungen lassen sich ergänzen.</p>
+        </div>
+        <div class="card">
+            <h3>Training</h3>
+            <p>Sätze abhaken, Gewicht und Wiederholungen korrigieren, Pausen-Timer mit Haptik. Persönliche Bestleistungen werden im Satz erkannt.</p>
+        </div>
+        <div class="card">
+            <h3>Statistik</h3>
+            <p>Geschätztes 1RM mit Verlauf, Wochenvolumen und ein Netzdiagramm der harten Sätze je Muskelgruppe – gegen den Richtwert 10–20 pro Woche.</p>
+        </div>
+        <div class="card">
+            <h3>Apple Watch</h3>
+            <p>Vollwertiger Begleiter am Handgelenk: Plan starten, Sätze abhaken, Gewicht per Digital Crown, Pause mit ablaufendem Ring. Das Training landet in den Aktivitätsringen.</p>
+        </div>
+        <div class="card">
+            <h3>KI-Coach</h3>
+            <p>Optional. Lässt sich mit dem Anbieter deiner Wahl verbinden – Anthropic, OpenAI, Gemini, MiniMax, eigenem Endpunkt oder Apple Intelligence auf dem Gerät.</p>
+        </div>
+        <div class="card">
+            <h3>Export</h3>
+            <p>Trainingsverlauf als kompakter Klartext, tokensparend aufbereitet für einen KI-Chat deiner Wahl.</p>
+        </div>
+    </div>
+
+    <h2>Datenschutz ist keine Einstellung, sondern der Aufbau</h2>
+    <div class="privacy">
+        <p><strong>Es gibt keinen Server, an den etwas ginge.</strong> Die App enthält keine Analyse-, Tracking- oder Werbebibliotheken und keinerlei Fremd-SDKs.</p>
+        <ul>
+            <li>Deine Daten liegen auf dem Gerät und – wenn du magst – in <strong>deiner privaten iCloud</strong>. Der Sync ist abschaltbar.</li>
+            <li>API-Schlüssel für den KI-Coach liegen ausschließlich im <strong>Schlüsselbund dieses Geräts</strong>, nie in iCloud.</li>
+            <li>Ein Schalter entscheidet, ob Körperwerte und Historie überhaupt an den KI-Anbieter gehen.</li>
+            <li>Apple Health wird auf dem iPhone <strong>nur auf Knopfdruck</strong> gelesen.</li>
+        </ul>
+    </div>
+
+    <h2>Rechtliches &amp; Hilfe</h2>
+    <div class="links">
+        <a href="datenschutz-de.html">Datenschutz</a>
+        <a href="nutzungsbedingungen-de.html">Nutzungsbedingungen</a>
+        <a href="support-de.html">Support</a>
+        <a href="../impressum-de.html">Impressum</a>
+    </div>
+
+    <p class="lang">English: <a href="datenschutz-en.html">Privacy</a> ·
+        <a href="nutzungsbedingungen-en.html">Terms</a> ·
+        <a href="support-en.html">Support</a></p>
+
+    <h2>In short (English)</h2>
+    <p style="color: var(--muted)">
+        PRimeLift is a strength-training app for iPhone and Apple&nbsp;Watch: build plans,
+        log sets, rest timer with haptics, personal-record detection, and statistics
+        including estimated 1RM and hard sets per muscle group. There is no server behind
+        it – your data stays on your device and, optionally, in your own private iCloud.
+        An AI coach can be connected to the provider of your choice; the API key never
+        leaves this device's keychain.
+    </p>
+
+    <footer>
+        <strong>ThinkWu</strong> · Sen Wu ·
+        <a href="mailto:thinkwu.sen.wu1986@gmail.com">thinkwu.sen.wu1986@gmail.com</a>
+    </footer>
+
+</div>
+</body>
+</html>

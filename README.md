@@ -16,6 +16,19 @@ Diese Seite stellt folgende rechtliche Dokumente zur Verfügung:
 | Projekt | Deutsch | English |
 |---------|---------|---------|
 | QuickFoodTracker | [quick-food-tracker-de.html](quick-food-tracker-de.html) | [quick-food-tracker-en.html](quick-food-tracker-en.html) |
+| PRimeLift | [primelift/datenschutz-de.html](primelift/datenschutz-de.html) | [primelift/datenschutz-en.html](primelift/datenschutz-en.html) |
+
+### Nutzungsbedingungen & Support
+
+| Projekt | Deutsch | English |
+|---------|---------|---------|
+| PRimeLift | [Nutzungsbedingungen](primelift/nutzungsbedingungen-de.html) · [Support](primelift/support-de.html) | [Terms](primelift/nutzungsbedingungen-en.html) · [Support](primelift/support-en.html) |
+
+### Landing-Pages
+
+| Projekt | Seite |
+|---------|-------|
+| PRimeLift | [primelift/index.html](primelift/index.html) |
 
 ### Impressum
 
